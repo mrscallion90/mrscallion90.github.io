@@ -1,0 +1,222 @@
+<!doctype html>
+<head>
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Naufal Razin Bin Rosli">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicons/favicon.ico">
+
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.violet.min.css">
+  <title>Portfolio: Naufal Razin</title>
+
+  <style>
+  :root {
+  --pico-font-size: 100%;
+  --pico-line-height: 1.6;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  header p {
+    margin: 0.25rem 0;
+  }
+
+  img.logo {
+    max-width: 25%;
+    height: auto;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contact-links a {
+    text-decoration: none;
+  }
+
+  .contact-links svg {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  section h2 {
+    border-bottom: 2px solid var(--pico-primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .background-item, .project-item, .cert-item, .about-item{
+    margin-bottom: 2rem;
+  }
+
+  .cert-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cert-item svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+
+  .cert-item h3 {
+    margin: 0;
+  }
+
+  .background-item h3, .project-item h3, .about-item h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .background-item h4{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    color: var(--pico-muted-color);
+  }
+
+  .meta {
+    font-size: 0.9rem;
+    color: var(--pico-muted-color);
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--pico-muted-border-color);
+  }
+  </style>
+
+</head>
+
+<body>
+  <main class="container">
+    <header>
+
+      <img src="assets/logo.png" class="logo">
+
+      <h1>Naufal Razin Bin Rosli</h1>
+      <p>Putrajaya, Malaysia</p>
+      <nav class="contact-links">
+        <a href="mailto:naufal.razin43@gmail.com" aria-label="Email">naufal.razin43@gmail.com</a>
+        <span>•</span>
+        <a href="tel:+601164956701" aria-label="Phone">+60 11-6495 6701</a>
+      </nav>
+      <nav class="contact-links">
+        <a href="https://github.com/mrscallion90?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320zM265.8 407.7c0-1.8 0-6 .1-11.6 .1-11.4 .1-28.8 .1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-26.6-7.5-56.6-7.5-83.2 0 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7 .1 30.6 0 4.8 .1 8.6 .1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7 .6 3.9 1.9 .3 1.3-1 2.6-3 3-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7 .9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1 .9-1.1 2.8-.9 4.3 .6 1.3 1.3 1.8 3.3 .9 4.1-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5 .9-.9 2.4-.4 3.5 .6 1.1 1.3 1.3 2.8 .4 3.5-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6 .4-.6 1.5-.9 2.8-.4 1.3 .7 1.9 1.8 1.5 2.6-.4 .9-1.7 1.1-2.8 .4z"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+
+      <article class="about-item">
+        <p>Diploma Student in Software Engineering. Applying for Internship.</p>
+        <p>Focus: AI Engineer + Mobile App Developer</p>
+      </article>
+
+      <article class="about-item">
+        <h4>Tech stack</h4>
+        <ul>
+          <li>AI Engineer/ML: Python, Tensorflow</li>
+          <li>Frontend: Dart + Flutter</li>
+          <li>Backend:
+            <ul>
+              <li>Google Firebase</li>
+              <li>Python FastAPI</li>
+              <li>NixOS(Linux)</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+
+    <section id="background">
+      <h2>Background</h2>
+      
+      <article class="background-item">
+        <h3>(Soon) Mobile App Developer</h3>
+        <h4><a href="website-link" target="_blank" rel="noopener noreferrer">company-name-here</a></h4>
+        <p class="meta">Jul 2027 – Dec 2027 • Internship • N/A</p>
+        <p>Example: Developed Test cases, refactoring legacy code and wrote documentation</p>
+      </article>
+
+      <article class="background-item">
+        <h3>Diploma in Software Engineering</h3>
+        <h4><a href="https://www.gmi.edu.my/" target="_blank" rel="noopener noreferrer">German-Malaysian Institute (GMI)</a></h4>
+        <p class="meta">Jan 2025 – Dec 2027 • Student • Bangi, Kajang</p>
+        <p>Developed practical skills in software engineering, programming, web and mobile development, databases, networking, testing, IoT, and AI.</p>
+      </article>
+    </section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      
+      <article class="project-item">
+        <h3>AI Fashion Scanner</h3>
+        <p class="meta">Diploma Final Year Project</p>
+        <p>Built a fashion wardrobe app using image recognition, embeddings, and vector search to identify clothing and recommend matching items from the user’s wardrobe.</p>
+      </article>
+
+      <!--
+
+      <article class="project-item">
+        <h3><a href="https://github.com/mrscallion90/<project>" target="_blank" rel="noopener noreferrer">Go POS</a></h3>
+        <p>Simple RESTful Point of Sale (POS) web service. Proof of concept for implementing hexagonal architecture in Go.</p>
+      </article>
+
+      -->
+    </section>
+
+
+
+    <section id="certifications">
+      <!-- https://simpleicons.org/ to get SVG icons -->
+      <h2>Certifications</h2>
+      
+      <article class="cert-item">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Cisco</title><path d="M16.331 18.171V17.06l-.022.01c-.25.121-.522.19-.801.203a1.186 1.186 0 01-.806-.237 1.038 1.038 0 01-.352-.498 1.21 1.21 0 01-.023-.667c.052-.225.178-.426.357-.569.16-.134.355-.218.562-.242a1.85 1.85 0 011.061.198l.024.013v-1.117l-.051-.014a2.862 2.862 0 00-1.011-.132 2.34 2.34 0 00-.903.206c-.287.132-.54.327-.739.571a2.221 2.221 0 00-.04 2.705c.295.378.709.645 1.175.756.491.12 1.006.102 1.487-.052l.082-.023M5.336 18.171V17.06l-.022.01c-.25.121-.522.19-.801.203a1.183 1.183 0 01-.806-.237 1.03 1.03 0 01-.351-.498 1.202 1.202 0 01-.024-.667c.052-.225.177-.426.357-.569.16-.134.355-.218.562-.242a1.85 1.85 0 011.061.198l.024.013v-1.117l-.051-.014a2.862 2.862 0 00-1.011-.132 2.344 2.344 0 00-.903.206 2.08 2.08 0 00-.74.571 2.224 2.224 0 00-.041 2.705 2.11 2.11 0 001.176.756c.491.12 1.005.102 1.487-.052l.083-.023M9.26 17.249l-.004.957.07.012c.22.041.441.069.664.085.195.019.391.022.587.012.187-.014.372-.049.551-.104.21-.06.405-.163.571-.305a1.16 1.16 0 00.333-.478 1.31 1.31 0 00-.007-.96 1.068 1.068 0 00-.298-.414 1.261 1.261 0 00-.438-.255l-.722-.268a.388.388 0 01-.197-.188.245.245 0 01.008-.219.382.382 0 01.154-.142.798.798 0 01.257-.074c.153-.022.308-.021.46.005.18.02.358.051.533.096l.038.008v-.883l-.069-.015a4.749 4.749 0 00-.543-.097 2.844 2.844 0 00-.714-.003c-.3.027-.585.143-.821.33-.16.126-.281.293-.351.484-.104.29-.105.608 0 .899.054.145.14.274.252.381.097.093.207.173.327.236.157.084.324.149.497.195.057.017.114.035.17.054l.085.031.024.01c.084.03.162.078.226.14.045.042.08.094.101.151a.325.325 0 01.001.161.339.339 0 01-.166.198.856.856 0 01-.275.086 2.032 2.032 0 01-.427.021 5.208 5.208 0 01-.557-.074 9.195 9.195 0 01-.287-.067l-.033-.006zm-2.475.995h1.05v-4.167h-1.05v4.167zm12.162-2.936a1.095 1.095 0 011.541.158 1.094 1.094 0 01-.157 1.541l-.017.014a1.096 1.096 0 01-1.367-1.713m-1.525.854a2.193 2.193 0 002.666 2.107 2.139 2.139 0 00.701-3.937 2.207 2.207 0 00-3.367 1.83M22.961 10.728a.52.52 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155M20.117 10.728a.522.522 0 001.041 0V8.139a.521.521 0 00-1.04 0v2.589M17.231 11.771a.521.521 0 001.039 0V6.17a.52.52 0 00-1.039 0v5.601M14.393 10.728a.521.521 0 001.04 0V8.139a.52.52 0 00-1.039 0v2.589M11.494 10.728a.522.522 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155M8.624 10.728a.52.52 0 001.039 0V8.139a.52.52 0 00-1.039 0v2.589M5.737 11.771a.52.52 0 001.039 0V6.17a.52.52 0 00-1.039 0v5.601M2.876 10.728a.522.522 0 001.04 0V8.139a.52.52 0 00-1.039 0v2.589M0 10.728a.521.521 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155"/></svg>
+        <h3><a href="https://www.credly.com/badges/23683cbb-eba2-4fcf-9503-cd4e13f1312c" target="_blank" rel="noopener noreferrer">CCNA: Introduction to Networks</a></h3>
+      </article>
+    </section>
+
+    <footer>
+      <p><small>&copy; <span id="year"></span> Naufal Razin Bin Rosli. All rights reserved.</small></p>
+      <p><small><a href="./assets/naufal-razin-ats-resume.pdf">Get ATS-Friendly Resume</a></small></p>
+    </footer>
+  </main>
+    
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
