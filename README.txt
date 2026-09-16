@@ -1,5 +1,8 @@
 Resume :) Hosted on github pages
 
+To get started:
+nix develop
+
 TODO
 - Add ATS-Format Resume
 	- GIT LFS
