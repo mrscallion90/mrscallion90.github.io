@@ -1,5 +1,7 @@
 Resume :) Hosted on github pages
 
+why tf nix takes 2.4 GB to dl when nix develop, is pdflatex that much bloated or😭
+
 To get started:
 nix develop
 

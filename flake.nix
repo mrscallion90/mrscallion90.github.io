@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, ... }:
+  outputs = { nixpkgs, ... }:
     let
       systems = [
         "x86_64-linux"
@@ -24,12 +24,12 @@
         default = pkgs.mkShell {
           packages = with pkgs; [
             bun
-            texliveSmall # provides pdflatex
+            texliveFull # provides pdflatex
           ];
 
           shellHook = ''
             alias hot-reload="bun --watch ./index.html"
-            alias build-pdf="cd ${self}/latex && pdflatex ats.tex && mv ats.pdf ../assets/naufal-razin-ats-resume.pdf"
+            alias build-pdf="cd $PWD/latex && pdflatex ats.tex && mv ats.pdf ../assets/naufal-razin-ats-resume.pdf && cd $PWD"
             
             echo "Development environment loaded"
             echo "Bun: $(bun --version)"
