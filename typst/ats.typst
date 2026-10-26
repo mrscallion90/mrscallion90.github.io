@@ -1,0 +1,112 @@
+#set page(
+  paper: "a4",
+  margin: 0.7in,
+  numbering: none,
+)
+
+#set text(size: 10pt)
+#set par(leading: 0.6em, spacing: 0.4em, justify: false)
+
+// Section headings with rule underneath
+#show heading.where(level: 1): it => {
+  v(0.6em, weak: true)
+  text(size: 12pt, weight: "bold")[#it.body]
+  v(0.2em, weak: true)
+  line(length: 100%, stroke: 0.5pt)
+  v(0.3em, weak: true)
+}
+
+// Tight list spacing
+#set list(
+  indent: 1.2em,
+  spacing: 0.2em,
+  body-indent: 0.5em,
+)
+
+//-----------------------------------------------------------
+// Header
+//-----------------------------------------------------------
+
+#align(center)[
+  #text(size: 17pt, weight: "bold")[Naufal Razin Bin Rosli]
+  #v(4pt)
+  Putrajaya, Malaysia \
+  #link("mailto:naufal.razin43@gmail.com")[naufal.razin43\@gmail.com]
+  #h(0.6em) | #h(0.6em)
+  +60 11-6495 6701 \
+  #link("https://github.com/mrscallion90")[github.com/mrscallion90]
+]
+
+//-----------------------------------------------------------
+= Profile
+//-----------------------------------------------------------
+
+Diploma student in Software Engineering seeking an internship opportunity.
+Interested in AI engineering and mobile application development, with practical
+experience in programming, databases, networking, web and mobile development,
+testing, IoT, Machine Learning and System Administration
+
+//-----------------------------------------------------------
+= Technical Skills
+//-----------------------------------------------------------
+
+*Languages:* PHP, SQL \
+*Backend:* Laravel (Eloquent, Blade) \
+*Database:* PostgreSQL \
+*Systems:* Linux, NixOS \
+*Tools:* Git, GitHub
+
+//-----------------------------------------------------------
+= Education
+//-----------------------------------------------------------
+
+#grid(
+  columns: (1fr, auto),
+  row-gutter: 0.6em,
+  [*Diploma in Software Engineering*], [Jan 2025 -- Dec 2027],
+  [_German-Malaysian Institute (GMI)_], [Bangi, Kajang],
+)
+
+#h(1cm)
+- Developed practical skills in software engineering, programming, web and
+  mobile development, databases, networking, testing, IoT, Machine Learning and System Administration.
+
+//-----------------------------------------------------------
+= Projects
+//-----------------------------------------------------------
+
+#grid(
+  columns: (1fr, auto),
+  [*Synergy Zyklen — Referral & Reward Platform | Final Year Project*], [July 2026 -- Jun 2027],
+)
+#v(0.4em)
+#set list(spacing: 0.4em, indent: 0em)
+
+- Full-stack development of a cycle-based referral and reward platform, digitising a manual profit-sharing model into an automated web system.
+- Built the core cycle engine in PHP/Laravel: sales are tracked in cycles of 1 to 12 units, and each completed cycle automatically credits RM 18 to the buyer and RM 6 to the referrer.
+- Laravel MVC backend with Eloquent ORM and Blade templates over PostgreSQL, role-based authentication for buyers, referrers and administrators, and integration for payouts. Deployed on Hostinger.
+- Delivered an in-house POS module for Walla Cafe on a staff-exclusive route within the same codebase, replacing their third-party system:
+  - Menu management, receipt printing and payments.
+  - Zyklen cycle and reward logic wired directly into the sales flow, so café purchases feed the reward model.
+  - Tablet-and-Bluetooth-printer deployment.
+  - Documented internet dependency as a known limitation of the web-based POS approach.
+- Worked in a team of 3 across the full stack: database design, backend logic, and frontend views.
+
+//-----------------------------------------------------------
+= Certifications
+//-----------------------------------------------------------
+
+*CCNA: Introduction to Networks* \
+Cisco Networking Academy \
+#link("https://www.credly.com/badges/23683cbb-eba2-4fcf-9503-cd4e13f1312c")[Credential: Credly]
+
+//-----------------------------------------------------------
+= Additional Information
+//-----------------------------------------------------------
+
+*Location:* Putrajaya, Malaysia \
+*Career Interests:* 
+- Full Stack Development
+- Mobile Application Development
+- Backend Development
+- Linux System Administrator
