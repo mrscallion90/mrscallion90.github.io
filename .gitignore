@@ -1,5 +1,1 @@
-latex/*.aux
-latex/*.log
-latex/*.out
-latex/*.fls
-latex/*.fdb_latexmk
+typst/*pdf
