@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <head>
   <meta name="description" content="Portfolio">
   <meta name="author" content="Naufal Razin Bin Rosli">
@@ -116,7 +117,7 @@
   <main class="container">
     <header>
 
-      <img src="assets/logo.png" class="logo">
+      <img alt="Logo" src="assets/logo.png" class="logo">
 
       <h1>Naufal Razin Bin Rosli</h1>
       <p>Putrajaya, Malaysia</p>
@@ -137,20 +138,17 @@
 
       <article class="about-item">
         <p>Diploma Student in Software Engineering. Applying for Internship.</p>
-        <p>Focus: Game Engine and extending game engine functionality</p>
+        <p>Focus: Web Development and Linux System Administration</p>
       </article>
 
       <article class="about-item">
         <h4>Tech stack</h4>
         <ul>
-          <li>Web Developer: PHP, HTML and CSS (undertaking right now, in semester 4)</li>
-          <li>Linux System Administrator (daily drives Linux)</li>
-          <li>Soon (in semester 5)
-            <ul>
-              <li>Mobile Developer: Kotlin for Android</li>
-              <li>Machine Learning</li>
-            </ul>
-          </li>
+          <li><b>Web Development:</b> PHP, Laravel (Eloquent, Blade), HTML and CSS</li>
+          <li><b>Database:</b> PostgreSQL, SQL</li>
+          <li><b>Systems:</b> Linux (daily driver)</li>
+          <li><b>Tools:</b> Git, Github</li>
+          <li><b>Soon (in Semester 5, I am 4 right now):</b> Kotlin</li>
         </ul>
       </article>
     </section>
@@ -181,13 +179,31 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      
-      <article class="project-item">
-        <h3>Gear Sight: 3D Car Simulation Desktop Application</h3>
+
+       <article class="project-item">
+        <h3>Synergy Zyklen: E-Commerce & Referral Platform</h3>
         <p class="meta">Diploma Final Year Project</p>
-        <p>Developed practical skills in 3D application development, game engine programming, simulation, interactive systems, and software engineering using the Godot Engine, customized and extended with open-source libraries.</p>
-        <!-- <p>Uses Godot Engine customized/extended with Open Source libraries</p> -->
+        <p>Full-stack e-commerce platform automating a cycle-based referral and reward model, replacing manual profit-sharing with tracked digital sales.</p>
+        <ul>
+          <li>Custom cycle logic: sales grouped into cycles of 1 to 12 units, each completed cycle crediting RM 18 to the buyer and RM 6 to the referrer</li>
+          <li>Laravel MVC backend with Eloquent ORM and Blade templates over PostgreSQL</li>
+          <li>Role-based authentication for buyers, referrers and administrators</li>
+          <li>Deployed on Hostinger</li>
+          <li>Team of 4, contributing across database design, backend logic and frontend views</li>
+        </ul>
       </article>
+
+      <article class="project-item">
+        <h3>Walla Cafe: In-House POS System</h3>
+        <p class="meta">Also Diploma Final Year Project</p>
+        <p>Point-of-sale system built on a staff-exclusive route within the Synergy Zyklen codebase, replacing the cafe's third-party solution.</p>
+        <ul>
+          <li>Menu management, receipt printing and DuitNow QR payments</li>
+          <li>Cycle and reward logic integrated into the sales flow, so cafe purchases feed the referral model</li>
+          <li>Tablet terminal paired with a Bluetooth thermal printer</li>
+          <li>Internet dependency documented as a known limitation of a web-based POS</li>
+        </ul>
+      </article>     
 
       <!--
 
@@ -213,7 +229,7 @@
 
     <footer>
       <p><small>&copy; <span id="year"></span> Naufal Razin Bin Rosli. All rights reserved.</small></p>
-      <p><small><a href="./assets/naufal-razin-ats-resume.pdf">Get ATS-Friendly Resume</a></small></p>
+      <p><a href="./assets/naufal-razin-ats-resume.pdf">Get ATS-Friendly Resume</a></p>
     </footer>
   </main>
     
